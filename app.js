@@ -129,9 +129,9 @@ function answersIndicator() {
 }
 
 
-function updateAnswerIndicator(markType) {
+function updateAnswersIndicator(markType) {
     answersIndicatorContainer.children[questionsCounter-1].classList.add(markType)
-}
+} 
 
 function next() {
     if(questionCounter === quiz.length) {
@@ -204,7 +204,7 @@ function startQuiz() {
     // to create indicator of answers
     answersIndicator();
 
-}
+}  
 
 window.onload = function() {
     homeBox.querySelector(".total-question").innerHTML = quiz.length;
